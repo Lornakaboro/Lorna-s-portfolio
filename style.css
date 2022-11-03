@@ -157,7 +157,7 @@ body {
 }
 
 .about-box {
-  padding: 90px 24px 24px 24px;
+  padding: 90px 24px 120px 24px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -217,6 +217,29 @@ body {
 
 .language-icon {
   padding: 15px;
+}
+
+/* Contact-section starts here */
+
+.container {
+  padding: 1rem 2.5rem;
+}
+
+.contact-form {
+  background: url("./images/contact-base.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 779px;
+  margin-top: -50px;
+}
+.contact-text h1 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+.contact-text p {
+  color: #fff;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
