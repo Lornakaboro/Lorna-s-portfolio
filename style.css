@@ -240,7 +240,10 @@ body {
 }
 .contact-text p {
   color: #fff;
+  font-size: 20px;
+  line-height: 28px;
   text-align: center;
+  margin-top: -30px;
 }
 
 @media screen and (max-width: 600px) {
