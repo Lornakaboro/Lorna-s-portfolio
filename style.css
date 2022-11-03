@@ -245,6 +245,17 @@ body {
   text-align: center;
   margin-top: -30px;
 }
+.contact-form-content {
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea {
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 20px;
+}
 
 @media screen and (max-width: 600px) {
   .intro-section {
