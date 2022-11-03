@@ -336,11 +336,10 @@ body {
   .work {
     margin: 10% 5% 10% 5%;
   }
-   
+ 
   .about-box {
     flex-direction: column;
   }
-  
 
   .contact-form {
     background-image: url("./images/contact-base.png");
@@ -379,10 +378,6 @@ body {
 
   .work-pointers-bullets {
     width: 60%;
-  }
-
-  .about-box {
-    flex-direction: column;
   }
 
   .contact-form-content {
@@ -510,4 +505,3 @@ body {
     align-items: center;
   }
 }
-
