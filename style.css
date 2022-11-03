@@ -310,6 +310,7 @@ body {
   background-color: #e5e5e5;
   color: #5e6c84;
 }
+
 @media screen and (max-width: 600px) {
   .intro-section {
     background-image: url("./images/background.png");
