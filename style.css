@@ -418,6 +418,9 @@ body {
 
   .language {
     flex-basis: 55%;
+    padding-left: 10%;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   .skill-list {
@@ -436,12 +439,6 @@ body {
     width: 40%;
     align-items: flex-start;
     margin-right: 3%;
-  }
-
-  .language {
-    padding-left: 10%;
-    font-size: 15px;
-    font-weight: 500;
   }
 
   .contact-form {
