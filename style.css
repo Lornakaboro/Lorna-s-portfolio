@@ -340,7 +340,7 @@ body {
   }
 
   .intro-section {
-    background-image: url("./images/desktop\ background.png");
+    background-image: url("./images/desktop-base.png");
     background-size: cover;
     height: 1000px;
   }
