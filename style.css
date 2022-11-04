@@ -375,12 +375,9 @@ body {
   .work {
     display: flex;
     gap: 20px;
-    /* margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 8%; */
   }
 
-  .work-image ,
+  .work-image,
   .work-description-section {
     flex-basis: 50%;
   }
@@ -418,10 +415,10 @@ body {
     flex-basis: 35%;
     padding-right: 4%;
   }
-  
+
   .language {
     flex-basis: 55%;
-  } 
+  }
 
   .skill-list {
     flex: 1;
