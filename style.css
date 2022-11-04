@@ -444,7 +444,7 @@ body {
   .contact-form {
     background-image: url("./images/desktop-form-background.png");
     background-size: cover;
-    height: 846px;
+    height: auto;
     background-repeat: no-repeat;
     background-color: #fff;
   }
