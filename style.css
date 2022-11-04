@@ -101,9 +101,9 @@ body {
   margin: 10% 5% 10% 5%;
 }
 
-.work-image {
+/* .work-image {
   width: 100%;
-}
+} */
 
 .work-title {
   margin: 0;
@@ -112,18 +112,23 @@ body {
 
 .work-pointers {
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.work-pointers-title {
+.work-pointers h3 {
   font-weight: 700;
   color: #344563;
 }
 
 .work-pointers-bullets {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-  color: #7a869a;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* width: 60%; */
+  background: #7a869a;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 
 .work-description {
@@ -148,7 +153,7 @@ body {
   background-color: #ebebff;
   color: #6070ff;
   padding: 4px 12px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .project-link {
@@ -327,7 +332,7 @@ body {
   color: #5e6c84;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px){
+@media only screen and (min-width: 768px) {
   .header {
     margin-left: 12%;
     margin-right: 10%;
@@ -359,7 +364,7 @@ body {
   }
 
   .info-box {
-    padding: 20% 19% 17% 19%;
+    padding: 12% 19% 17% 19%;
   }
 
   .mobile-works {
@@ -372,9 +377,15 @@ body {
 
   .work {
     display: flex;
-    margin-left: 8%;
+    gap: 20px;
+    /* margin-left: 8%;
     margin-right: 8%;
-    margin-top: 8%;
+    margin-top: 8%; */
+  }
+
+  .work-image ,
+  .work-description-section {
+    flex-basis: 50%;
   }
 
   .work-reverse {
@@ -385,12 +396,12 @@ body {
     width: 45%;
   }
 
-  .work-description-section {
-    margin-left: 4%;
+  .work-pointers {
+    display: flex;
   }
 
-  .work-pointers-bullets {
-    width: 28%;
+  .work-description-section {
+    margin-left: 4%;
   }
 
   .about-box {
@@ -398,12 +409,22 @@ body {
     margin-top: 8%;
   }
 
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
   .about-box-section {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex-basis: 35%;
     padding-right: 4%;
   }
+  
+  .language {
+    flex-basis: 55%;
+  } 
 
   .skill-list {
     flex: 1;
