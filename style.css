@@ -191,6 +191,7 @@ body {
   padding: 12px;
   font-size: 17px;
   font-weight: 500;
+  animation: wiggle 2s linear infinite;
 }
 
 .intro-button:hover {
@@ -313,7 +314,9 @@ body {
   background-color: #fff;
   padding: 9px 20px;
   margin-bottom: 1rem;
+  animation: wiggle 2s linear infinite;
 }
+
 
 .contact-form-btn:hover {
   background-color: #6070ff;
@@ -465,11 +468,6 @@ body {
   }
 }
 
-/* Animations */
-.contact-form-btn,
-.intro-button {
-  animation: wiggle 2s linear infinite;
-}
 
 /* Keyframes */
 @keyframes wiggle {
@@ -477,30 +475,36 @@ body {
   7% {
     transform: rotateZ(0);
   }
+
   15% {
     transform: rotateZ(-15deg);
   }
+
   20% {
     transform: rotateZ(10deg);
   }
+
   25% {
     transform: rotateZ(-10deg);
   }
+
   30% {
     transform: rotateZ(6deg);
   }
+
   35% {
     transform: rotateZ(-4deg);
   }
+
   40%,
   100% {
     transform: rotateZ(0);
   }
 }
 
-.animation {
-  animation-duration: 3s;
-  animation-name: slidein;
+ .animation {
+   animation-duration: 3s;
+   animation-name: slidein;
 }
 
 @keyframes slidein {
