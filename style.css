@@ -332,6 +332,11 @@ body {
   color: #5e6c84;
 }
 
+.animation {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
 @media only screen and (min-width: 768px) {
   .header {
     margin-left: 12%;
@@ -498,11 +503,6 @@ body {
   100% {
     transform: rotateZ(0);
   }
-}
-
-  .animation {
-    animation-duration: 3s;
-    animation-name: slidein;
 }
 
 @keyframes slidein {
