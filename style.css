@@ -317,7 +317,6 @@ body {
   animation: wiggle 2s linear infinite;
 }
 
-
 .contact-form-btn:hover {
   background-color: #6070ff;
   color: #fff;
@@ -468,7 +467,6 @@ body {
   }
 }
 
-
 /* Keyframes */
 @keyframes wiggle {
   0%,
@@ -503,8 +501,8 @@ body {
 }
 
  .animation {
-   animation-duration: 3s;
-   animation-name: slidein;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 @keyframes slidein {
