@@ -498,8 +498,6 @@ body {
   }
 }
 
-/* ===================== Animation ===================== */
-
 .animation {
   animation-duration: 3s;
   animation-name: slidein;
