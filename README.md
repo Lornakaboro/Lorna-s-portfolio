@@ -5,6 +5,10 @@
 
 > My name is Lorna and this is my portfolio aimed at showcasing my accomplishments, skills and educational background
 
+
+## Live link
+Click [here](https://lornakaboro.github.io/Lorna-s-portfolio/)
+
 ## Built With
 
 - HTML
@@ -26,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 
 - use the git clone command with this [link](git@github.com:Lornakaboro/Lorna-s-portfolio.git)
 - cd into Lorna-s-portfolio
-- Switch branch using this command `git checkout create-mobile-feature`
+- Switch branch using this command `git checkout web-deploy`
 - Open index.html in your browser
 - You will be able to see a template with my name, a brief description and social media handles.
 
