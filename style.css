@@ -299,6 +299,8 @@ body {
   border-radius: 10px;
   border: 1px solid #cfd8dc;
   padding: 15px;
+  margin-left: 0;
+  text-indent: 2px;
 }
 
 .contact-form-btn {
