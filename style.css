@@ -17,7 +17,7 @@ body {
   background-color: #6070ff;
   height: 110vh;
   width: 100%;
-  mix-blend-mode:multiply;
+  mix-blend-mode: multiply;
 }
 
 .hidden-dropdown-menu {
@@ -44,8 +44,7 @@ body {
   gap: 30px;
 }
 
-
-.x-holder{
+.x-holder {
   display: flex;
   flex-direction: row-reverse;
   padding: 48px 36px 0 0;
@@ -54,9 +53,7 @@ body {
 .x-icon {
   width: 20px;
   height: 20px;
-
 }
-
 
 /* For drop down menu */
 
@@ -99,7 +96,6 @@ body {
   background-repeat: no-repeat;
   height: 779px;
 }
-
 
 .blur-intro-section {
   filter: blur(7px);
@@ -407,11 +403,9 @@ body {
     height: 1000px;
   }
 
-  
   .dropdown-menu {
     display: none;
   }
-
 
   #hamburger-icon {
     display: none;
