@@ -295,3 +295,16 @@ function openDesktopPopUp(counter) {
   desktopPopUp.innerHTML = data;
   desktopPopUp.classList.remove('hide-desktop-popup');
 }
+
+// form validation
+
+const form = document.getElementById('contact-form-content');
+const email = document.getElementById('contact-form-email');
+const errormsg = document.getElementById('contact-form-error');
+
+form.addEventListener('submit', (e) =>{
+    if (email.value.toLowerCase() !== email.value){
+        errormsg.style.display = 'block';
+        e.preventDefault();
+    };
+});
