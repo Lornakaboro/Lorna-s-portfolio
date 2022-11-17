@@ -264,6 +264,9 @@ body {
 .mobile-popup-links {
   display: flex;
   border-top: #ebecf0 solid 1px;
+  width: 353px;
+  height: 84px;
+  gap: 12px;
 }
 
 .mobile-popup-project-link {
@@ -291,7 +294,7 @@ body {
 }
 
 .popup-icon {
-  margin-left: 8%;
+  margin-top: 4%;
 }
 
 .about-box {
@@ -619,11 +622,12 @@ body {
     list-style: none;
     padding: 0;
     padding-bottom: 10px;
+    gap: 8px;
   }
 
   .desktop-popup-tag {
     width: max-content;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: #ebebff;
     color: #6070ff;
     padding: 4px 12px;
@@ -632,15 +636,15 @@ body {
   }
 
   .desktop-popup-project-link {
-    width: max-content;
+    /* width: max-content; */
     border: 1px solid #6070ff;
     border-radius: 8px;
     color: #396df2;
-    padding: 8px;
-    font-size: 17px;
+    padding: 10px 25px;
+    font-size: 15px;
     font-weight: 500;
     text-decoration: none;
-    margin-right: 4px;
+    margin-right: 16px;
   }
 
   .desktop-popup-project-link:hover {
