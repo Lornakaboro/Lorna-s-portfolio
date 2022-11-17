@@ -408,6 +408,70 @@ body {
     margin-left: 4%;
   }
 
+  /* mobile popup section */
+  .mobile-popup {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(193, 199, 208, 0.4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    overflow: auto;
+    animation-name: animefromtop;
+    animation-duration: 0.6s;
+  }
+
+  @keyframes animefromtop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  .hide-mobile-popup {
+    display: none;
+  }
+
+  .mobile-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-popup-links {
+    display: flex;
+    border-top: #ebecf0 solid 1px;
+  }
+
+  .mobile-popup-project-link {
+    width: max-content;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    color: #396df2;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 8%;
+    flex: 1;
+    align-content: center;
+  }
+
+  .mobile-popup-project-link1 {
+    margin-right: 10px;
+  }
+
+  .mobile-popup-project-link:hover {
+    background-color: #396df2;
+    color: #fff;
+  }
+
   .about-box {
     padding: 12% 12% 10% 3%;
     margin-top: 8%;
