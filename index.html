@@ -9,18 +9,26 @@
   <script src="https://kit.fontawesome.com/c6cb015206.js" crossorigin="anonymous"></script>
 <body>
 
-  <div class="intro-section">
-    <header class="header">
-      <a href="" class="logo">My Logo</a>
-      <nav class="hamburger-icon">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </nav>
-        <ul class="nav">
-          <li class="nav-item"><a href="!#" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="!#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="!#" class="nav-link">Contact</a></li>
+      <!-- drop down starts-->
+      <div class="dropdown-menu hidden-dropdown-menu" id="nav-dropdown-menu">
+        <i class="fa-regular fa-x dropdown-x-icon" id="nav-dropdown-x-icon" onclick="toggleMobileMenu()"></i>
+        <ul class="nav-dropdown">
+          <li class="nav-dropdown-item"><a class="nav-dropdown-item-link" href="#intro-section" onclick="openDropdownItem(this,'#introduction-section')">Portfolio</a></li>
+          <li class="nav-dropdown-item"><a class="nav-dropdown-item-link" href="#about-box" onclick="openDropdownItem(this, '#about-box')">About</a></li>
+          <li class="nav-dropdown-item"><a class="nav-dropdown-item-link" href="#contact" onclick="openDropdownItem(this, '#contact')">Contact</a></li>
         </ul>
-    </header>
+      </div>
+      <div class="intro-section" id="intro-section">
+        <header class="header">
+          <a href="" class="logo">My Logo</a>
+          <i class="fa fa-bars hamburger" aria-hidden="true" id="hamburger-icon" onclick="toggleMobileMenu()"></i>
+          <ul class="nav">
+            <li class="nav-item"><a href="#introduction-section" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#about-me" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#contact-me" class="nav-link">Contact</a></li>
+          </ul>
+        </header>
+    
     
     <section class="info-box animation">
       <h1 class="introduction">I&#39;m Lorna <br/> Glad to see you!</h1>
@@ -267,7 +275,7 @@
      <!--mobile popup section -->
      <div class="mobile-popup mobile-works hide-mobile-popup" id="mobile-popup"></div>
              <!-- About section starts here -->
-  <section class="about-box">
+  <section class="about-box" id="about-box">
    <div class="row">
     <div class="about-box-section">
         <h2 class="introduction">About <br>Myself</h2>
@@ -342,7 +350,7 @@
   </section>
 
               <!-- Contact form section starts here -->
-  <section class="contact-form animation">
+  <section class="contact-form animation" id="contact">
         <h2 class="contact-form-heading">Contact me</h2>
         <p class="contact-form-description">If you have an application you are interested in developing, a feature that 
             you need built or a project that needs coding. I&#39;d love to help with it </p>
@@ -357,6 +365,7 @@
             <button type="submit" class=" contact-form-btn">Get in Touch</button>
         </form>
   </section>
+  <script src="./script.js"></script>
 </body>
 </html>
 
