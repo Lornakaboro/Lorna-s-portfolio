@@ -19,8 +19,6 @@ function openDropdownItem(menuElement, menuLink) {
   menuElement.href = menuLink;
 }
 
-
-
 const popup = document.getElementById('mobile-popup');
 
 function closePopUp() {
@@ -211,8 +209,6 @@ const desktopProjectData = [
   },
 ];
 
-
-
 function generateDesktopProjectData(projectList) {
   let data = '';
   for (let i = 0; i < projectList.length; i += 1) {
@@ -298,5 +294,3 @@ function openDesktopPopUp(counter) {
   desktopPopUp.innerHTML = data;
   desktopPopUp.classList.remove('hide-desktop-popup');
 }
-
-
