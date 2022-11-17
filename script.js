@@ -271,7 +271,7 @@ function openDesktopPopUp(counter) {
           <p>${currentProjectData.pointersYear}</p>
       </div>
 
-        <img src='${currentProjectData.featuredImage}' class='desktop-popup-work-image' alt='image of a website hero-section'>
+        <img src='./images/popup-image-desk.png' class='desktop-popup-work-image' alt='image of a website hero-section'>
         <div class='desktop-popup-description'>
             <div class='desktop-popup-work-description'>
                 <p>${currentProjectData.description}</p>
