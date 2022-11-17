@@ -143,7 +143,7 @@ function openPopUp(index) {
             </a>
             <a href='${projectData[index].linkToSource}' class='mobile-popup-project-link'>
                 See Source
-                <img src='/images/github.png' alt='github icon' class='popup-icon'>
+                <img src='/images/github-vector.png' alt='github icon' class='popup-icon'>
             </a>
         </div>
     </div>
@@ -280,7 +280,7 @@ function openDesktopPopUp(counter) {
                 </a>
                 <a href='${currentProjectData.linkToSource}' class=' desktop-popup-project-link'>
                 See Source
-                    <img src='/images/github.png' alt='github icon' class='popup-icon'>
+                    <img src='/images/github-vector.png' alt='github icon' class='popup-icon'>
                 </a>
             </div>  
         </div>  
