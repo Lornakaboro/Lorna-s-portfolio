@@ -211,20 +211,20 @@ const desktopProjectData = [
   },
 ];
 
-function getTechnologies(technologies) {
-  let tech = '';
-  for (let i = 0; i < technologies.length; i += 1) {
-    const currentTechnology = technologies[i];
-    tech += `<li class='tag'>${currentTechnology}</li>`;
-  }
-  return tech;
-}
+
 
 function generateDesktopProjectData(projectList) {
   let data = '';
   for (let i = 0; i < projectList.length; i += 1) {
     const currentProject = desktopProjectData[i];
     let workReverse = '';
+
+    let tech = '';
+    for (let j = 0; j < currentProject.technologies.length; j += 1) {
+      const currentTechnology = currentProject.technologies[j];
+      tech += `<li class='tag'>${currentTechnology}</li>`;
+    }
+
     if (i % 2 !== 0) {
       workReverse = 'work-reverse';
     }
@@ -242,9 +242,7 @@ function generateDesktopProjectData(projectList) {
                     </div>
                     <p class='work-description'>${currentProject.description}</p>
                     <ul class='tags'>
-                        <li class='tag'>html</li>
-                        <li class='tag'>css</li>
-                        <li class='tag'>javaScript</li>
+                        ${tech}
                     </ul>
                     <a href='#!' class='project-link' onclick='openDesktopPopUp(${i})' >
                      See Project
@@ -256,6 +254,49 @@ function generateDesktopProjectData(projectList) {
   return data;
 }
 
+document.querySelector('#desktop-works').innerHTML = generateDesktopProjectData(projectData);
 
+function openDesktopPopUp(counter) {
+  const currentProjectData = desktopProjectData[counter];
+  const desktopTechnologies = getTechnologies(
+    desktopProjectData[counter].technologies,
+  );
+  const data = `
+    <div class='desktop-popup' >
+        <div class='desktop-popup-title'>
+            <h2 class='work-title'>${currentProjectData.name}</h2>
+        <i class='fa-regular fa-x desktop-dropdown-x-icon' onclick='closeDesktopPopUp()'></i>
+        </div>
+        <div class='work-pointers'>
+            <p class='work-pointers-title'>${currentProjectData.pointersTitle}</p>
+            <ul class='work-pointers-bullets-popup'>
+                <li>${currentProjectData.pointersLevel}</li>
+                <li>${currentProjectData.pointersYear}</li>
+            </ul>
+        </div>
+        <img src='${currentProjectData.featuredImage}' class='desktop-popup-work-image' alt='image of a website hero-section'>
+        <div class='desktop-popup-description'>
+            <div class='desktop-popup-work-description'>
+                <p>${currentProjectData.description}</p>
+            </div>
+            <div class='desktop-popup-items'>
+                <ul class=' desktop-popup-tags'>
+                ${desktopTechnologies}
+                </ul>
+                <a href='${currentProjectData.linkToLiveVersion}' class=' desktop-popup-project-link'>
+                See live
+                    <img src='/images/Popup-icon.png' alt='image of a small icon' class='popup-icon'>
+                </a>
+                <a href='${currentProjectData.linkToSource}' class=' desktop-popup-project-link'>
+                See Source
+                    <img src='/images/github-vector.png' alt='github icon' class='popup-icon'>
+                </a>
+            </div>  
+        </div>  
+    </div>
+    `;
+  desktopPopUp.innerHTML = data;
+  desktopPopUp.classList.remove('hide-desktop-popup');
+}
 
 
