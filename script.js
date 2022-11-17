@@ -263,13 +263,14 @@ function openDesktopPopUp(counter) {
             <h2 class='work-title'>${currentProjectData.name}</h2>
         <i class='fa-regular fa-x desktop-dropdown-x-icon' onclick='closeDesktopPopUp()'></i>
         </div>
-        <div class='work-pointers'>
-            <p class='work-pointers-title'>${currentProjectData.pointersTitle}</p>
-            <ul class='work-pointers-bullets-popup'>
-                <li>${currentProjectData.pointersLevel}</li>
-                <li>${currentProjectData.pointersYear}</li>
-            </ul>
-        </div>
+        <div class="work-pointers">
+          <h3>${currentProjectData.pointersTitle}</h3>
+          <div class="work-pointers-bullets"></div>
+          <p>${currentProjectData.pointersLevel}</p>
+          <div class="work-pointers-bullets"></div>
+          <p>${currentProjectData.pointersYear}</p>
+      </div>
+
         <img src='${currentProjectData.featuredImage}' class='desktop-popup-work-image' alt='image of a website hero-section'>
         <div class='desktop-popup-description'>
             <div class='desktop-popup-work-description'>
