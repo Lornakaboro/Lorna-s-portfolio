@@ -458,7 +458,7 @@ body {
 }
 
 .contact-form-error {
-  display: none;
+  /* display: none; */
   color: red;
 }
 
