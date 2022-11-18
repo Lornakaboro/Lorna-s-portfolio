@@ -114,7 +114,7 @@ function generateMobileProjectData(projectList) {
   return data;
 }
 
-document.getElementById('mobile-works').innerHTML = generateMobileProjectData(projectData);
+document.querySelector('mobile-works').innerHTML = generateMobileProjectData(projectData);
 
 function openPopUp(index) {
   const technologiesUsed = getTechnologies(projectData[index].technologies);
