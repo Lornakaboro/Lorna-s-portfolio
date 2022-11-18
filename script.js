@@ -313,6 +313,10 @@ function validateContactForm() {
 
 }
 
+userNameInput.value = localStorage.getItem("contact-form-username")
+userEmailInput.value = localStorage.getItem("contact-form-email")
+userTextInput.value = localStorage.getItem("contact-form-message")
+
 
 
 
