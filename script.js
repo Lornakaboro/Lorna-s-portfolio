@@ -306,7 +306,7 @@ function validateContactForm() {
     document.getElementById("contact-form-error").innerHTML = "Your email should be in lowercase"
     return false;
   }
- 
+
   localStorage.setItem("contact-form-username", userNameInput.value)
   localStorage.setItem("contact-form-email", userEmailInput.value)
   localStorage.setItem("contact-form-message", userTextInput.value)
