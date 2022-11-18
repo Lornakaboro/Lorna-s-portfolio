@@ -296,15 +296,25 @@ function openDesktopPopUp(counter) {
   desktopPopUp.classList.remove('hide-desktop-popup');
 }
 
-// form validation
+const userNameInput = document.getElementById("contact-form-username")
+const userEmailInput = document.getElementById("contact-form-email")
+const userTextInput = document.getElementById("contact-form-message")
 
-const form = document.getElementById('contact-form-content');
-const email = document.getElementById('contact-form-email');
-const errormsg = document.getElementById('contact-form-error');
-
-form.addEventListener('submit', (e) => {
-  if (email.value.toLowerCase() !== email.value) {
-    errormsg.style.display = 'block';
-    e.preventDefault();
+function validateContactForm() {
+  const userEmail = document.forms["my-contact-form"]["email"].value;
+  if (userEmail !== userEmail.toLowerCase()) {
+    document.getElementById("contact-form-error").innerHTML = "Your email should be in lowercase"
+    return false;
   }
-});
+ 
+  localStorage.setItem("contact-form-username", userNameInput.value)
+  localStorage.setItem("contact-form-email", userEmailInput.value)
+  localStorage.setItem("contact-form-message", userTextInput.value)
+
+}
+
+
+
+
+
+
